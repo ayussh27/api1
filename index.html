@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My-Site</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <section>
+    <h1>What Your Personality tells about you?..Let's Find Out</h1>
+    <div class="centerdiv">
+      <div class="details">
+        <label>Enter Your Name Here!</label><br><br>
+        <input type="text" name="" id="nameid">
+      </div>
+
+      <div class="imgdiv">
+        <img src="images.png" alt="cover-image" class="imgchange">
+      </div>
+
+      <button>CLICK ME</button>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <script>
+   $(document).ready(function(){
+    $('button').click(function(){
+     const name = $('#nameid').val();
+     alert(name);
+     $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/jon ${name}`);
+
+
+    });
+   });
+  </script>
+
+</body>
+
+</html>
